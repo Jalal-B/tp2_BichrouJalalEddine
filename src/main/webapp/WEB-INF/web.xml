@@ -3,4 +3,30 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
          version="6.0">
+
+    <!-- Page d’accueil JSF -->
+    <welcome-file-list>
+        <welcome-file>index.xhtml</welcome-file>
+    </welcome-file-list>
+
+    <!-- Forcer l'encodage UTF-8 pour tous les échanges -->
+    <filter>
+        <filter-name>CharsetFilter</filter-name>
+        <filter-class>ma.emsi.bichroujalaleddine.tp2_bichroujalaleddine.filter.CharsetFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>CharsetFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+    <!-- Optionnel : Support des accents dans JSF -->
+    <context-param>
+        <param-name>jakarta.faces.CLIENT_WINDOW_MODE</param-name>
+        <param-value>url</param-value>
+    </context-param>
+    <context-param>
+        <param-name>javax.faces.PROJECT_STAGE</param-name>
+        <param-value>Development</param-value>
+    </context-param>
+
 </web-app>
