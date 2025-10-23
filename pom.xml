@@ -40,13 +40,13 @@
         <dependency>
             <groupId>dev.langchain4j</groupId>
             <artifactId>langchain4j</artifactId>
-            <version>1.5.0</version>
+            <version>1.7.1</version>
         </dependency>
         <!-- LangChain4j Gemini -->
         <dependency>
             <groupId>dev.langchain4j</groupId>
             <artifactId>langchain4j-google-ai-gemini</artifactId>
-            <version>1.5.0</version>
+            <version>1.7.1</version>
         </dependency>
         <!-- SLF4J (logging LangChain4j) -->
         <dependency>
