@@ -28,7 +28,7 @@ public class Test5RagPDF {
         }
 
         // --- NOM DU PDF À LIRE À LA RACINE DU PROJET ! ---
-        String nomDocument = "langchain4j.pdf";  // Mets ici le vrai nom du PDF téléchargé
+        String nomDocument = "langchain4j.pdf";
 
         // Modèle Gemini avec température basse pour la vérité
         ChatModel model = GoogleAiGeminiChatModel.builder()
