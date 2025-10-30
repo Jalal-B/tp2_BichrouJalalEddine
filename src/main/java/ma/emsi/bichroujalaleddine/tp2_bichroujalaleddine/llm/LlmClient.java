@@ -8,13 +8,11 @@ import dev.langchain4j.service.AiServices;
 import jakarta.enterprise.context.Dependent;
 import ma.emsi.bichroujalaleddine.tp2_bichroujalaleddine.jsf.Assistant;
 import dev.langchain4j.data.message.SystemMessage;
-
 import java.io.Serializable;
 
 @Dependent
 public class LlmClient implements Serializable {
     private static final long serialVersionUID = 1L;
-
     private String systemRole;
     private Assistant assistant;
     private ChatMemory chatMemory;
